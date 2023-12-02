@@ -74,7 +74,13 @@ Ensure you have Flutter installed on your machine before proceeding with the ins
 
 ## Contributing
 
-If you would like to contribute to the development of the BMI Calculator app, feel free to fork the repository and submit a pull request. Make sure to follow the [contribution guidelines](CONTRIBUTING.md).
+If you would like to contribute to this project, please follow these steps:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-name`)
+3. Commit your changes (`git commit -m 'Add feature-name'`)
+4. Push to the branch (`git push origin feature-name`)
+5. Create a new Pull Request
 
 ## License
 
