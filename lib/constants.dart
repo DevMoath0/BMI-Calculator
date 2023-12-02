@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bmi_calculator/screens/results_page.dart';
 
 const kBottomContainerHeight = 80.0;
 const kActiveCardColour = Color(0xFFB0A8B9);
@@ -29,7 +30,7 @@ const kTitleTextStyle = TextStyle(
 );
 
 const kResultTextStyle = TextStyle(
-  color: Color(0xFF24D876),
+  color: Colors.white,
   fontSize: 22.0,
   fontWeight: FontWeight.bold,
 );
