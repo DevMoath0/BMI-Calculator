@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:bmi_calculator/dark_theme.dart';
 import 'package:bmi_calculator/screens/input_page.dart';
 
 void main() {
@@ -13,7 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: darkTheme,
+      theme: ThemeData(
+        scaffoldBackgroundColor: Color(0xFF323133),
+      ),
       home: const InputPage(),
     );
   }

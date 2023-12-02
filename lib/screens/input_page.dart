@@ -8,7 +8,7 @@ import 'package:bmi_calculator/components/icon_content.dart';
 import 'package:bmi_calculator/constants.dart';
 import 'package:bmi_calculator/components/bottom_button.dart';
 import 'package:bmi_calculator/components/round_icon_button.dart';
-//import 'package:bmi_calculator/screens/results_page.dart';
+import 'package:bmi_calculator/screens/results_page.dart';
 
 enum Gender {
   male,
@@ -33,7 +33,14 @@ class _InputPageState extends State<InputPage> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: const Text("BMI CALCULATOR"),
+          title: const Text(
+            "BMI CALCULATOR",
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          ),
+          centerTitle: true,
+          backgroundColor: Color(0xFF323133),
         ),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -78,9 +85,6 @@ class _InputPageState extends State<InputPage> {
             ),
             Expanded(
               child: ReusableCard(
-                onPress: () {
-                  setState(() {});
-                },
                 colour: kActiveCardColour,
                 cardChild: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -108,8 +112,8 @@ class _InputPageState extends State<InputPage> {
                       data: SliderTheme.of(context).copyWith(
                         inactiveTrackColor: Color(0xFF8D8E98),
                         activeTrackColor: Colors.white,
-                        thumbColor: Color(0xFFEB1555),
-                        overlayColor: Color(0x29EB1555),
+                        thumbColor: Color(0xFF00C9A7),
+                        overlayColor: Color(0x2200C9A7),
                         thumbShape:
                             RoundSliderThumbShape(enabledThumbRadius: 15.0),
                         overlayShape:
@@ -135,9 +139,6 @@ class _InputPageState extends State<InputPage> {
                 children: [
                   Expanded(
                     child: ReusableCard(
-                      onPress: () {
-                        setState(() {});
-                      },
                       colour: kActiveCardColour,
                       cardChild: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -179,9 +180,6 @@ class _InputPageState extends State<InputPage> {
                   ),
                   Expanded(
                     child: ReusableCard(
-                      onPress: () {
-                        setState(() {});
-                      },
                       colour: kActiveCardColour,
                       cardChild: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -223,6 +221,24 @@ class _InputPageState extends State<InputPage> {
                   ),
                 ],
               ),
+            ),
+            BottomButton(
+              buttonTitle: 'CALCULATE',
+              onTap: () {
+                CalculatorBrain calc =
+                    CalculatorBrain(height: height, weight: weight);
+
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ResultsPage(
+                      bmiResult: calc.calculateBMI(),
+                      resultText: calc.getResult(),
+                      interpretation: calc.getInterpretation(),
+                    ),
+                  ),
+                );
+              },
             ),
           ],
         ),
