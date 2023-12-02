@@ -9,6 +9,7 @@
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+- [Contact](#Contact)
 
 ## Introduction
 
@@ -78,3 +79,11 @@ If you would like to contribute to the development of the BMI Calculator app, fe
 ## License
 
 This BMI Calculator app is open-source and available under the [MIT License](LICENSE).
+
+## Contact
+For any questions or assistance:
+
+[devmoath1@gmail.com](mailto:devmoath1@gmail.com)
+
+[@_Devmoath](https://twitter.com/_DevMoath)
+
