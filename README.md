@@ -1,4 +1,5 @@
-# BMI Calculator App
+# BMI Calculator 
+![BMI](https://github.com/DevMoath0/BMI-Calculator/assets/109462109/29c18492-8122-4f61-9b96-4e766985298e)
 
 ## Table of Contents
 - [Introduction](#introduction)
