@@ -1,5 +1,5 @@
+![BMI_Logo](https://github.com/DevMoath0/BMI-Calculator/assets/109462109/78bb1fdb-bc60-404f-81c3-36aa509daf00)
 # BMI Calculator 
-![BMI](https://github.com/DevMoath0/BMI-Calculator/assets/109462109/29c18492-8122-4f61-9b96-4e766985298e)
 
 ## Table of Contents
 - [Introduction](#introduction)
